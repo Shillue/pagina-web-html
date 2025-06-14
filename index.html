@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+    <title>HTML para Iniciantes</title>
+</head>
+
+<body>
+
+    <header id="top">
+
+        <section style="text-align: center; padding-top: 10px;">
+            <h1>Explorando o Mundo do HTML</h1>
+            <img src="./images/logo.png" alt="Imagem logo HTML" width="100px">
+        </section>
+
+        <section>
+             <ul>
+                <li><a href="#clientServer">Entendendo Comunicação Client x Server</a></li>
+                <li><a href="#introducaoHtml">Introdução ao HTML na Prática</a></li>
+                <li><a href="#formulariosHtml">Trabalhando com Formulários em HTML</a></li>
+                <li><a href="#estruturandoHtml">Estruturando seu HTML + Formatações</a></li>
+                 <li><a href="#midias">Trabalhando com Mídias utilizando HTML</a></li>
+                <li><a href="#tabelas">Criando Tabelas com HTML</a></li>
+                <li><a href="#semantico">Entendendo HTML Semântico</a></li>
+                <li><a href="#saibaMais">Saiba Mais</a></li>
+            </ul>
+        </section>
+
+        <hr />
+    </header>
+
+    <main>
+        <section id="clientServer">
+            <h2>Entendendo Comunicação Client x Server</h2>
+            <small><a href="#top">Voltar</a></small>
+            <p>
+                Antes da internet colorida e cheia de memes, existia uma rede feita de
+                terminais, fios e ideias geniais. A <b><i>história da Web</i></b> começa
+                com os primeiros computadores, grandes como geladeiras, e mentes como as
+                de <strong><a href="https://pt.wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a></strong>, que
+                pavimentaram o caminho para a internet atual.
+            </p>
+            <p>
+                Atualmente a comunicação digital acontece entre dois personagens
+                principais: o <strong>client</strong> e o <strong>server</strong>. O
+                client é quem consome o conteúdo — navegadores, aplicativos e
+                dispositivos móveis — e o server é quem entrega esse conteúdo, seja ele
+                um site, uma imagem ou um banco de dados.
+            </p>
+            <blockquote cite="https://pt.wikipedia.org/wiki/Servidor_web">Servidor web é  um software responsável por aceitar pedidos em <font color="blue"><abbr
+                title="O Hypertext Transfer Protocol, sigla HTTP (em português Protocolo de Transferência de Hipertexto)">HTTP</abbr>
+                </font> de clientes, geralmente os navegadores, e servi-los com respostas em HTTP, incluindo
+                opcionalmente dados, que geralmente são páginas web, tais como documentos em HTML com objetos embutidos
+                (imagens, etc) ou um computador que executa um programa que provê a funcionalidade descrita
+                anteriormente. O mais popular, e mais utilizado no mundo, é o <i>servidor Apache (software livre)</i>. A
+                Microsoft possui a sua própria solução denominada <font color="blue"><abbr
+                        title="Internet Information Services - Serviços de Informação da Internet">IIS</abbr></font>.
+            </blockquote>
+            <p>
+                Sendo assim, os servidores funcionam como bibliotecas digitais gigantes,
+                compostos de hardware e software especializados, e podem ser dedicados,
+                compartilhados ou na nuvem. E para essa comunicação funcionar, entram as
+                linguagens de programação, divididas entre client-side e server-side.
+                Importante lembrar: <del>HTML é uma linguagem de programação</del> HTML
+                <strong>não</strong> é linguagem de programação.
+            </p>
+        </section>
+
+        <section id="introducaoHtml">
+            <h2>Introdução ao HTML na Prática</h2>
+            <small><a href="#top">Voltar</a></small>
+            <p>
+                O
+                <font color="blue"><abbr
+                        title="Abreviação para a expressão inglesa HyperText Markup Language, que significa: Linguagem de Marcação de Hipertexto">HTML</abbr>
+                </font>
+                é o esqueleto da web. Ele estrutura o conteúdo, dá ordem e faz tudo
+                ganhar forma. Começando pela
+                <mark>estrutura básica de um documento HTML</mark>: &lt;html&gt;,
+                &lt;head&gt; e &lt;body&gt;
+            </p>
+            <p>
+                Ferramentas como o <mark>Inspetor de Elementos</mark> dos navegadores
+                permitem visualizar e testar modificações diretamente nas páginas. Tags
+                como &lt;p&gt;, &lt;h1&gt; até &lt;h6&gt;, listas ordenadas &lt;ol&gt; e
+                não ordenadas &lt;ul&gt;, e links &lt;a&gt; são a base para montar um
+                site funcional. Além disso, atributos nas tags como
+                <u>href, class, id</u> oferecem mais controle sobre o comportamento e a
+                apresentação dos elementos.
+            </p>
+        </section>
+
+        <section id="formulariosHtml">
+            <h2>Trabalhando com Formulários em HTML</h2>
+            <small><a href="#top">Voltar</a></small>
+            <p>
+                Um formulário<q
+                    cite="https://en-m-wikipedia-org.translate.goog/wiki/HTML_form?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc">em
+                    uma página web permite que um usuário insira dados que são enviados a um servidor para
+                    processamento.</q> Desse modo, os formulários são as portas de entrada para interatividade com o
+                usuário. Ao usar a tag &lt;form&gt;, é possível criar interfaces que coletam dados e os enviam para o
+                servidor.
+            </p>
+            <p>
+                Sendo assim, existem vários tipos de &lt;input&gt;, como texto, senha,
+                e-mail, botão,checkbox e radio, cada um ideal para uma finalidade
+                específica. Entretanto, por ser auxiliar na semântica, além de oferece
+                maior flexibilidade e controle sobre o estilo e comportamento a tag para
+                Botões mais utilizada é <sup>&lt;button&gt;</sup> em vez
+                <sub>&lt;input type="button" value="Clique aqui"&gt;</sub>que acionam
+                envios ou scripts, enquanto menus suspensos &lt;select&gt; oferecem
+                múltiplas escolhas. Para textos mais longos, entra em cena a
+                &lt;textarea&gt;. Cada elemento contribui para uma experiência mais
+                fluida e funcional na hora de preencher cadastros, fazer buscas ou
+                enviar comentários.
+            </p>
+        </section>
+
+        <section id="estruturandoHtml">
+            <h2>Estruturando seu HTML + Formatações</h2>
+            <small><a href="#top">Voltar</a></small>
+            <p>
+                Organizar conteúdo em HTML é torna a experiência de leitura mais fácil e
+                mais agradável. Tags como &lt;div&gt; e &lt;span&gt; permitem agrupar e
+                estilizar seções específicas.Para formular agrupamentos de campos de
+                formulário com rótulos, entra o &lt;fieldset&gt;.
+            </p>
+            <p>
+                Além disso, recursos como &lt;iframe&gt; e &lt;embed&gt; permitem
+                incorporar outros conteúdos, como vídeos do YouTube ou mapas. O uso
+                correto de cores, seja por nomes, RGB ou hexadecimal, também faz parte
+                da construção de uma interface mais acessível e visualmente agradável.
+            </p>
+        </section>
+
+        <section id="midias">
+            <h2>Trabalhando com Mídias utilizando HTML</h2>
+            <small><a href="#top">Voltar</a></small>
+            <p>
+                A linguagem HTML permite a inclusão de diversos tipos de mídias em
+                páginas da web, como imagens, sons, vídeos e conteúdos incorporados.
+                Para isso, utilizamos algumas <i>tags</i> específicas que facilitam essa
+                integração e tornam a experiência do usuário mais rica e interativa.
+            </p>
+            <h3>O que são tags de mídias</h3>
+            <p>
+                Tags de mídias em HTML são elementos usados para inserir conteúdos
+                visuais ou sonoros, como imagens, vídeos e áudios. Elas possibilitam a
+                exibição desses recursos diretamente no navegador, sem a necessidade de
+                plugins externos.
+            </p>
+
+            <h4>A tag &lt;img&gt;</h4>
+            <p>
+                A tag &lt;img&gt; é utilizada para exibir imagens. Possui
+                <u>os atributos</u> <b>src</b>: que é o atributo mais importante e
+                obrigatório, já que epecifica o caminho ou URL da imagem que deve ser
+                exibida, <b>alt</b>: define um texto alternativo para a imagem, que é
+                exibido caso a imagem não possa ser carregada ou se o usuário estiver
+                usando um leitor de tela. O texto alternativo é essencial para
+                acessibilidade
+            </p>
+            <p>Exemplo: &lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;</p>
+            <h5>Exemplos de formatos suportados</h5>
+            <ul>
+                <li>JPEG</li>
+                <li>PNG</li>
+                <li>GIF</li>
+                <li>SVG (gráfico vetorial)</li>
+            </ul>
+
+            <h4>A tag &lt;audio&gt;</h4>
+            <p>
+                Com a tag <code>&lt;audio&gt;</code>, é possível adicionar sons ou
+                músicas a uma página. Ela pode incluir controles para o usuário iniciar
+                ou pausar a reprodução.
+            </p>
+            <pre><code>
+                &lt;audio controls&gt;
+                    &lt;source src="musica.mp3" type="audio/mpeg"&gt;
+                    Seu navegador não suporta áudio.
+                &lt;/audio&gt;
+            </code></pre>
+            <h5>Principais atributos</h5>
+            <ul>
+                <li><strong>controls</strong>: exibe os controles padrão</li>
+                <li><strong>autoplay</strong>: inicia a reprodução automaticamente</li>
+                <li><strong>loop</strong>: repete o áudio</li>
+            </ul>
+            <article>
+                <h6><mark>Observação</mark></h6>
+                <p>Permite múltiplas fontes de áudio dentro da mesma tag, e o navegador escolhe automaticamente a
+                    primeira que for compatível. Isso é útil porque nem todos os navegadores suportam todos os formatos
+                    de audio.</p>
+            </article>
+
+            <h4>A tag &lt;video&gt;</h4>
+            <p>
+                A tag &lt;video&gt; é usada para incorporar vídeos. Assim
+                como a tag de áudio, ela pode ter controles.
+            </p>
+            <pre><code>
+                &lt;video width="320" height="240" controls&gt;
+                    &lt;source src="video.mp4" type="video/mp4"&gt;
+                    Seu navegador não suporta vídeos.
+                &lt;/video&gt;
+            </code></pre>
+            <h5>Recursos adicionais</h5>
+            <ul>
+                <li>Legendas</li>
+                <li>Vídeos alternativos</li>
+            </ul>
+            <article>
+                <h6><mark>Observação</mark></h6>
+                <p>Permite múltiplas fontes de vídeo dentro da mesma tag, e o navegador escolhe automaticamente a
+                    primeira que for compatível. Isso é útil porque nem todos os navegadores suportam todos os formatos
+                    de vídeo. Por exemplo, o Safari prefere .mp4, enquanto navegadores como Firefox e Chrome também
+                    suportam .webm</p>
+            </article>
+
+            <h4>A tag &lt;track&gt;</h4>
+            <p>A tag &lt;track&gt; é usada dentro da tag &lt;video&gt; ou
+                &lt;audio&gt; para adicionar legendas, descrições ou traduções.</p>
+            <pre><code>
+                &lt;video controls&gt;
+                    &lt;source src="filme.mp4" type="video/mp4"&gt;
+                    &lt;track src="legenda.vtt" kind="subtitles" srclang="pt"       label="Português"&gt;
+                &lt;/video&gt;
+            </code></pre>
+
+            <h5>Tipos de kind</h5>
+            <ul>
+                <li><i>subtitles</i>: legendas</li>
+                <li><i>captions</i>: legendas para deficientes auditivos</li>
+                <li><i>descriptions</i>: descrições de áudio</li>
+            </ul>
+
+            <h4>A tag &lt;iframe&gt;</h4>
+            <p>A tag &lt;iframe&gt; permite incorporar conteúdos de outras páginas, como vídeos do YouTube, mapas, entre outros.</p>
+            <pre><code>
+                &lt;iframe src="https://www.youtube.com/embed/ID_DO_VIDEO" width="560" height="315" allowfullscreen&gt;&lt;/iframe&gt;
+            </code></pre>
+
+            <h5>Uso comum</h5>
+            <ul>
+                <li>Vídeos de plataformas externas</li>
+                <li>Mapas - Google Maps</li>
+                <li>Documentos PDF</li>
+            </ul>
+        </section>
+
+        <section id="tabelas">
+            <h2>Criando Tabelas com HTML</h2>
+            <small><a href="#top">Voltar</a></small>
+            <p>Tabelas são ideais para apresentar dados organizados. A estrutura começa com &lt;table&gt; e é composta
+                por linhas &lt;tr&gt;, colunas de dados &lt;td&gt; e cabeçalhos &lt;th&gt;.</p>
+            <p>Para melhorar a clareza, usam-se &lt;thead&gt;, &lt;tbody&gt; e &lt;tfoot&gt; — que separam a tabela em
+                seções. A estilização das tabelas com <font color="blue"><abbr
+                        title="Cascading Style Sheets - Folhas de estilo em cascata">CSS</abbr></font> ajuda na
+                visualização e torna os dados mais agradáveis ao olhar, seja numa tabela de preços ou numa planilha de
+                horários.</p>
+        </section>
+
+        <section id="semantico">
+            <h2>Entendendo HTML Semântico</h2>
+            <small><a href="#top">Voltar</a></small>
+            <blockquote cite="https://www.godaddy.com/resources/br/artigos/html-semantico">A semântica é o que atribui
+                significado à linguagem HTML, formada por códigos que estruturam os elementos das páginas. Dessa forma,
+                a conexão entre o design gráfico e as tags semânticas facilita a interação do usuário e do navegador com
+                o site.</blockquote>
+            <p><span style="color:green">HTML semântico</span> dá significado real aos elementos. Ao usar tags como
+                &lt;header&gt;, &lt;main&gt;, &lt;article&gt;, &lt;nav> ou &lt;footer&gt;, o navegador e os mecanismos
+                de busca entendem melhor o papel de cada parte do conteúdo. Além de deixar o código mais organizado,
+                isso melhora a acessibilidade para leitores de tela e contribui com o <abbr title="(Search Engine Optimization), ou Otimização para Mecanismos de Busca">SEO</abbr> é o conjunto de estratégias de otimização para mecanismos de busca, facilitando que buscadores como o Google encontrem e classifiquem melhor a página.</p>
+                
+                    <figure id="imageSemantica">
+                        <img src="images/html.png" alt="Imagem de exemplo de página não semântica e de página semântica">
+                        <figcaption>Exemplo de página não semântica e de página semântica</figcaption>
+                    </figure>  
+                
+            <p>O <span style="color:green">HTML5</span> trouxe essas melhorias, além de elementos como &lt;section&gt;,
+                &lt;side&gt;, &lt;figure&gt; e &lt;figcaption&gt;, ajudando a deixar o conteúdo mais claro, tanto para
+                máquinas quanto para humanos. E para quem gosta de explorar dados, o <strong>web scraping</strong> se
+                beneficia bastante de páginas bem estruturadas semânticamente.</p>
+        </section>
+
+        <section id="saibaMais">
+            <h2>Saiba Mais</h2>
+            <small><a href="#top">Voltar</a></small>
+            <ol>
+                <li><a href="https://youtu.be/FWeHPCqD67c?si=rJg-NcRZKu3Sf3L9" target="_blank">Arquitetura
+                        Cliente-servidor | O que é, Como Funciona e Exemplo</a></li>
+                <li><a href="https://youtu.be/-ZI9CtRKg2A?si=PeKN4YgunRmqEJSv">Tags HTML</a></li>
+                <li><a href="https://youtu.be/pKOp7pQQzNM?si=9y0dE_9dQv0AdiWk" target="_blank">Tags Semânticas do
+                        HTML5</a></li>
+                <li><a href="https://youtu.be/MIH339qNWfo?si=e2A50Im8lrkQXWWu">Formação Lógia Programação | DIO</a></li>
+            </ol>
+        </section>
+
+        <hr />
+    </main>
+
+    <footer>
+        <p style="text-align: center;"><small>Challenge by <a href="https://web.dio.me/home">DIO</a>. Coded by <a href="https://github.com/Shillue" target="_blank">Shilluê</a>.</small></p>
+    </footer>
+</body>
+
+</html>
